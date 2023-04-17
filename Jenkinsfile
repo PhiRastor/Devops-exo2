@@ -16,8 +16,8 @@ pipeline {
           mail to: 'phirastor@proton.me', 
           subject: 'Test',
           body: 'Bonjour, ceci est un test',
-          mimeType: 'text/html'
-          slackSend channel: "#channel-name", message: "Build Started
+          mimeType: 'text/html';
+          slackSend channel: "#exo", message: "Build Started;
         }
   }
 }
