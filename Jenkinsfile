@@ -13,7 +13,10 @@ pipeline {
   }
   post {
         always {
-            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
+          to: 'phirastor@proton.me', 
+          subject: 'Test',
+          body: 'Bonjour, ceci est un test',
+          mimeType: 'text/html'
         }
   }
 }
