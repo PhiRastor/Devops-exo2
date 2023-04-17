@@ -13,7 +13,7 @@ pipeline {
   }
   post {
         always {
-          to: 'phirastor@proton.me', 
+          mail to: 'phirastor@proton.me', 
           subject: 'Test',
           body: 'Bonjour, ceci est un test',
           mimeType: 'text/html'
