@@ -17,7 +17,10 @@ pipeline {
           subject: 'Test',
           body: 'Bonjour, ceci est un test',
           mimeType: 'text/html';
-          slackSend channel: "#exo", message: "Build Started;
+          slackSend botUSer: true, 
+            channel: "exo", 
+            message: "Jenkins build complete",
+            tokenCredentialId: "slack-token";
         }
   }
 }
